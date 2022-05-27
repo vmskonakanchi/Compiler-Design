@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/adminstrator/Desktop/Compiler Design'
+bison parser.yy
+flex lexer.flex
+g++ -g -w -c parser.tab.cc -std=c++14
+g++ -g -w -o compiler parser.tab.o lex.yy.c main.cc -std=c++14
+make: Leaving directory '/home/adminstrator/Desktop/Compiler Design'
+ 
